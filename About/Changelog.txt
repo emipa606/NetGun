@@ -1,0 +1,4 @@
+# Changelog for NetGun
+
+1.4.0 - First publish
+
