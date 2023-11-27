@@ -5,6 +5,8 @@
 Update of yiuaaas mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2126099924
 
+- Added the Net Belt from https://steamcommunity.com/sharedfiles/filedetails/?id=2583646612]Net Belt 抓捕網腰帶
+
 ![Image](https://i.imgur.com/pufA0kM.png)
 
 	
@@ -49,7 +51,7 @@ change log:
 2020/6/11: balancing updated
 2020/6/11: textures updated
 2020/6/13: rebuild some codes and prepare for CE patching
-2020/6/15: CE patch has released: [url]https://steamcommunity.com/sharedfiles/filedetails/?id=2130948460[url]
+2020/6/15: CE patch has released: [url]https://steamcommunity.com/sharedfiles/filedetails/?id=2130948460
 2020/913: 1.2 updated
 2021/8/22: 1.3 updated
 	

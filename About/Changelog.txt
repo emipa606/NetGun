@@ -1,5 +1,8 @@
 # Changelog for NetGun
 
+1.4.2 - Added a net-turret
+
+
 1.4.1 - Added the Net Belt from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2583646612]Net Belt 抓捕網腰帶[/url]
 
 
