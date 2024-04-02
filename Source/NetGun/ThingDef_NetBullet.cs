@@ -4,7 +4,7 @@ namespace NetGun;
 
 public class ThingDef_NetBullet : ThingDef
 {
-    public float AddHediffChance = 1f;
+    public readonly float AddHediffChance = 1f;
 
     public HediffDef HediffToAdd;
 

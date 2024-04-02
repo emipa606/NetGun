@@ -1,3 +1,4 @@
+using System.Reflection;
 using HarmonyLib;
 using Verse;
 
@@ -13,7 +14,6 @@ public static class HarmonyPatches
 
     public static void DoPatching()
     {
-        var harmony = new Harmony("net.yiuaaa.rimworld.mod.NetGun");
-        harmony.PatchAll();
+        new Harmony("net.yiuaaa.rimworld.mod.NetGun").PatchAll(Assembly.GetExecutingAssembly());
     }
 }

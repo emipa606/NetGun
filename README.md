@@ -6,6 +6,7 @@ Update of yiuaaas mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2126099924
 
 - Added the Net Belt from https://steamcommunity.com/sharedfiles/filedetails/?id=2583646612]Net Belt 抓捕網腰帶
+- Added a net turret
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 

@@ -5,21 +5,12 @@ using Verse;
 
 namespace NetGun;
 
-[HarmonyPatch(typeof(PawnRenderer), "RenderPawnInternal", typeof(Vector3), typeof(float), typeof(bool), typeof(Rot4),
-    typeof(RotDrawMode), typeof(PawnRenderFlags))]
-internal class Patch_RenderPawnInternal
+[HarmonyPatch(typeof(PawnRenderUtility), nameof(PawnRenderUtility.DrawEquipmentAndApparelExtras))]
+internal class Patch_DrawEquipmentAndApparelExtras
 {
-    private static void Postfix(PawnRenderer __instance, Vector3 rootLoc, float angle, bool renderBody, Rot4 bodyFacing,
-        RotDrawMode bodyDrawType, PawnRenderFlags flags, Pawn ___pawn)
+    private static void Postfix(Pawn pawn, Vector3 drawPos, Rot4 facing, PawnRenderFlags flags)
     {
-        var graphics = __instance.graphics;
-        var quat = Quaternion.AngleAxis(angle, Vector3.up);
-        if (!renderBody)
-        {
-            return;
-        }
-
-        var hediffs = ___pawn.health.hediffSet.hediffs;
+        var hediffs = pawn.health.hediffSet.hediffs;
         Hediff hediff = null;
         var num = -1;
         var isEntangled = false;
@@ -65,10 +56,9 @@ internal class Patch_RenderPawnInternal
             return;
         }
 
-        var vector = rootLoc;
+        var vector = drawPos;
         vector.y += 1f / 132f;
-        if (bodyDrawType == RotDrawMode.Dessicated && !___pawn.RaceProps.Humanlike &&
-            graphics.dessicatedGraphic != null && !flags.FlagSet(PawnRenderFlags.Portrait))
+        if (pawn.GetRotStage() != RotStage.Fresh)
         {
             return;
         }
@@ -93,42 +83,39 @@ internal class Patch_RenderPawnInternal
                 break;
         }
 
-        if (bodyDrawType != 0)
-        {
-            return;
-        }
 
-        var loc = rootLoc;
+        var loc = pawn.DrawPos;
         loc.y += 1.0189394f;
+        var quat = Quaternion.Euler(Vector3.up * pawn.Drawer.renderer.BodyAngle(PawnRenderFlags.None));
         if (resolvedWound != null)
         {
-            if (___pawn.BodySize >= 2.7)
+            if (pawn.BodySize >= 2.7)
             {
                 GenDraw.DrawMeshNowOrLater(MeshMakerPlanes.NewPlaneMesh(2.5f), loc, quat,
-                    resolvedWound.GetMaterial(bodyFacing, out _), flags.FlagSet(PawnRenderFlags.DrawNow));
+                    resolvedWound.GetMaterial(facing, out _), flags.FlagSet(PawnRenderFlags.DrawNow));
                 return;
             }
 
-            if (___pawn.BodySize >= 1.7)
+            if (pawn.BodySize >= 1.7)
             {
-                GenDraw.DrawMeshNowOrLater(MeshPool.plane20, loc, quat, resolvedWound.GetMaterial(bodyFacing, out _),
+                GenDraw.DrawMeshNowOrLater(MeshPool.plane20, loc, quat, resolvedWound.GetMaterial(facing, out _),
                     flags.FlagSet(PawnRenderFlags.DrawNow));
                 return;
             }
 
-            if (___pawn.BodySize >= 0.7)
+            if (pawn.BodySize >= 0.7)
             {
-                GenDraw.DrawMeshNowOrLater(MeshPool.plane14, loc, quat, resolvedWound.GetMaterial(bodyFacing, out _),
+                GenDraw.DrawMeshNowOrLater(MeshPool.plane14, loc, quat, resolvedWound.GetMaterial(facing, out _),
                     flags.FlagSet(PawnRenderFlags.DrawNow));
                 return;
             }
 
-            GenDraw.DrawMeshNowOrLater(MeshPool.plane10, loc, quat, resolvedWound.GetMaterial(bodyFacing, out _),
+            GenDraw.DrawMeshNowOrLater(MeshPool.plane10, loc, quat, resolvedWound.GetMaterial(facing, out _),
                 flags.FlagSet(PawnRenderFlags.DrawNow));
             return;
         }
 
-        if (___pawn.BodySize >= 2.7)
+        if (pawn.BodySize >= 2.7)
         {
             GenDraw.DrawMeshNowOrLater(MeshMakerPlanes.NewPlaneMesh(2.5f), loc, quat,
                 MaterialPool.MatFrom("Things/Pawn/Wounds/Net_retexture_Genom-X", ShaderDatabase.WoundSkin, Color.white),
@@ -136,7 +123,7 @@ internal class Patch_RenderPawnInternal
             return;
         }
 
-        if (___pawn.BodySize >= 1.7)
+        if (pawn.BodySize >= 1.7)
         {
             GenDraw.DrawMeshNowOrLater(MeshPool.plane20, loc, quat,
                 MaterialPool.MatFrom("Things/Pawn/Wounds/Net_retexture_Genom-X", ShaderDatabase.WoundSkin, Color.white),
@@ -144,7 +131,7 @@ internal class Patch_RenderPawnInternal
             return;
         }
 
-        if (___pawn.BodySize >= 0.7)
+        if (pawn.BodySize >= 0.7)
         {
             GenDraw.DrawMeshNowOrLater(MeshPool.plane14, loc, quat,
                 MaterialPool.MatFrom("Things/Pawn/Wounds/Net_retexture_Genom-X", ShaderDatabase.WoundSkin, Color.white),
