@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: net gun -->
+  <Gun_Net.label>net gun</Gun_Net.label>
+  <!-- EN: A net gun is a non-lethal weapon designed to fire a net which entangles the target. -->
+  <Gun_Net.description>A net gun is a non-lethal weapon designed to fire a net which entangles the target.</Gun_Net.description>
+  <!-- EN: stock -->
+  <Gun_Net.tools.stock.label>stock</Gun_Net.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_Net.tools.barrel.label>barrel</Gun_Net.tools.barrel.label>
+  <!-- EN: net gun -->
+  <Gun_Net.verbs.Verb_Shoot.label>net gun</Gun_Net.verbs.Verb_Shoot.label>
+  <!-- EN: net belt -->
+  <YP_Apparel_NetBelt.label>net belt</YP_Apparel_NetBelt.label>
+  <!-- EN: Net grenades strapped to a belt. They can be thrown a short distance, where they'll land, capturing a target without causing serious harm to it. -->
+  <YP_Apparel_NetBelt.description>Net grenades strapped to a belt. They can be thrown a short distance, where they'll land, capturing a target without causing serious harm to it.</YP_Apparel_NetBelt.description>
+  <!-- EN: net -->
+  <YP_Apparel_NetBelt.comps.CompApparelReloadable.chargeNoun>net</YP_Apparel_NetBelt.comps.CompApparelReloadable.chargeNoun>
+  <!-- EN: on cooldown -->
+  <YP_Apparel_NetBelt.comps.CompApparelReloadable.cooldownGerund>on cooldown</YP_Apparel_NetBelt.comps.CompApparelReloadable.cooldownGerund>
+  <!-- EN: net belt -->
+  <YP_Apparel_NetBelt.verbs.Verb_LaunchProjectileStatic.label>net belt</YP_Apparel_NetBelt.verbs.Verb_LaunchProjectileStatic.label>
+  <!-- EN: net -->
+  <YP_Bullet_NetGun.label>net</YP_Bullet_NetGun.label>
+</LanguageData>

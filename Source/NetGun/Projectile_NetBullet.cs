@@ -5,7 +5,7 @@ namespace NetGun;
 
 internal class Projectile_NetBullet : Bullet
 {
-    public ThingDef_NetBullet Def => def as ThingDef_NetBullet;
+    private ThingDef_NetBullet Def => def as ThingDef_NetBullet;
 
     protected override void Impact(Thing hitThing, bool blockedByShield = false)
     {

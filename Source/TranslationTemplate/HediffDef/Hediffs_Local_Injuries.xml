@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: gunshot -->
+  <NetGunshot.label>gunshot</NetGunshot.label>
+  <!-- EN: A gunshot wound. -->
+  <NetGunshot.description>A gunshot wound.</NetGunshot.description>
+  <!-- EN: Shot off -->
+  <NetGunshot.injuryProps.destroyedLabel>Shot off</NetGunshot.injuryProps.destroyedLabel>
+  <!-- EN: Shot out -->
+  <NetGunshot.injuryProps.destroyedOutLabel>Shot out</NetGunshot.injuryProps.destroyedOutLabel>
+  <!-- EN: a gunshot wound -->
+  <NetGunshot.labelNoun>a gunshot wound</NetGunshot.labelNoun>
+  <!-- EN: {0} in the {1} -->
+  <NetGunshot.labelNounPretty>{0} in the {1}</NetGunshot.labelNounPretty>
+  <!-- EN: entangle -->
+  <YP_Entangle_Large.label>entangle</YP_Entangle_Large.label>
+  <!-- EN: Entanglement in a net. -->
+  <YP_Entangle_Large.description>Entanglement in a net.</YP_Entangle_Large.description>
+  <!-- EN: entangled -->
+  <YP_Entangle_Large.labelNoun>entangled</YP_Entangle_Large.labelNoun>
+  <!-- EN: {0} in the {1} -->
+  <YP_Entangle_Large.labelNounPretty>{0} in the {1}</YP_Entangle_Large.labelNounPretty>
+  <!-- EN: entangle -->
+  <YP_Entangle_Mech.label>entangle</YP_Entangle_Mech.label>
+  <!-- EN: Entanglement in a net. -->
+  <YP_Entangle_Mech.description>Entanglement in a net.</YP_Entangle_Mech.description>
+  <!-- EN: entangled -->
+  <YP_Entangle_Mech.labelNoun>entangled</YP_Entangle_Mech.labelNoun>
+  <!-- EN: {0} in the {1} -->
+  <YP_Entangle_Mech.labelNounPretty>{0} in the {1}</YP_Entangle_Mech.labelNounPretty>
+  <!-- EN: entangle -->
+  <YP_Entangle_Normal.label>entangle</YP_Entangle_Normal.label>
+  <!-- EN: Entanglement in a net. -->
+  <YP_Entangle_Normal.description>Entanglement in a net.</YP_Entangle_Normal.description>
+  <!-- EN: entangled -->
+  <YP_Entangle_Normal.labelNoun>entangled</YP_Entangle_Normal.labelNoun>
+  <!-- EN: {0} in the {1} -->
+  <YP_Entangle_Normal.labelNounPretty>{0} in the {1}</YP_Entangle_Normal.labelNounPretty>
+  <!-- EN: entangle -->
+  <YP_Entangle_Small.label>entangle</YP_Entangle_Small.label>
+  <!-- EN: Entanglement in a net. -->
+  <YP_Entangle_Small.description>Entanglement in a net.</YP_Entangle_Small.description>
+  <!-- EN: entangled -->
+  <YP_Entangle_Small.labelNoun>entangled</YP_Entangle_Small.labelNoun>
+  <!-- EN: {0} in the {1} -->
+  <YP_Entangle_Small.labelNounPretty>{0} in the {1}</YP_Entangle_Small.labelNounPretty>
+  <!-- EN: entangle -->
+  <YP_Entangle_xLarge.label>entangle</YP_Entangle_xLarge.label>
+  <!-- EN: Entanglement in a net. -->
+  <YP_Entangle_xLarge.description>Entanglement in a net.</YP_Entangle_xLarge.description>
+  <!-- EN: entangled -->
+  <YP_Entangle_xLarge.labelNoun>entangled</YP_Entangle_xLarge.labelNoun>
+  <!-- EN: {0} in the {1} -->
+  <YP_Entangle_xLarge.labelNounPretty>{0} in the {1}</YP_Entangle_xLarge.labelNounPretty>
+</LanguageData>

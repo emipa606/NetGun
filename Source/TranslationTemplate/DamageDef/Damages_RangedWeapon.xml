@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: entangle -->
+  <YP_RangedEntangle.label>entangle</YP_RangedEntangle.label>
+  <!-- EN: {0} has been entangled to death. -->
+  <YP_RangedEntangle.deathMessage>{0} has been entangled to death.</YP_RangedEntangle.deathMessage>
+</LanguageData>

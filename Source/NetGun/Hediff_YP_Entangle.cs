@@ -6,7 +6,7 @@ namespace NetGun;
 
 public class Hediff_YP_Entangle : Hediff
 {
-    private static readonly Color PermanentInjuryColor = new Color(0.1f, 0.1f, 0.72f);
+    private static readonly Color permanentInjuryColor = new(0.1f, 0.1f, 0.72f);
 
     public Hediff_YP_Entangle(HediffDef def)
     {
@@ -27,5 +27,5 @@ public class Hediff_YP_Entangle : Hediff
         this.def = def;
     }
 
-    public override Color LabelColor => this.IsPermanent() ? PermanentInjuryColor : Color.white;
+    public override Color LabelColor => this.IsPermanent() ? permanentInjuryColor : Color.white;
 }

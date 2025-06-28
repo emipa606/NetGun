@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: net-turret gun -->
+  <Gun_NetTurret.label>net-turret gun</Gun_NetTurret.label>
+  <!-- EN: A simple automatic net gun made to be mounted on a turret. -->
+  <Gun_NetTurret.description>A simple automatic net gun made to be mounted on a turret.</Gun_NetTurret.description>
+  <!-- EN: net-turret gun -->
+  <Gun_NetTurret.verbs.Verb_Shoot.label>net-turret gun</Gun_NetTurret.verbs.Verb_Shoot.label>
+  <!-- EN: net-turret -->
+  <Turret_NetTurret.label>net-turret</Turret_NetTurret.label>
+  <!-- EN: A portable automatic net turret. Its dumb AI brain can't be directly controlled, so beware of friendly fire. -->
+  <Turret_NetTurret.description>A portable automatic net turret. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</Turret_NetTurret.description>
+</LanguageData>

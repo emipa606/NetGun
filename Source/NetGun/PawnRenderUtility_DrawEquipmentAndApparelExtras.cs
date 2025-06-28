@@ -6,7 +6,7 @@ using Verse;
 namespace NetGun;
 
 [HarmonyPatch(typeof(PawnRenderUtility), nameof(PawnRenderUtility.DrawEquipmentAndApparelExtras))]
-internal class Patch_DrawEquipmentAndApparelExtras
+internal class PawnRenderUtility_DrawEquipmentAndApparelExtras
 {
     private static void Postfix(Pawn pawn, Vector3 drawPos, Rot4 facing, PawnRenderFlags flags)
     {
@@ -86,38 +86,38 @@ internal class Patch_DrawEquipmentAndApparelExtras
 
         var loc = pawn.DrawPos;
         loc.y += 1.0189394f;
-        var quat = Quaternion.Euler(Vector3.up * pawn.Drawer.renderer.BodyAngle(PawnRenderFlags.None));
+        var quaternion = Quaternion.Euler(Vector3.up * pawn.Drawer.renderer.BodyAngle(PawnRenderFlags.None));
         if (resolvedWound != null)
         {
             if (pawn.BodySize >= 2.7)
             {
-                GenDraw.DrawMeshNowOrLater(MeshMakerPlanes.NewPlaneMesh(2.5f), loc, quat,
+                GenDraw.DrawMeshNowOrLater(MeshMakerPlanes.NewPlaneMesh(2.5f), loc, quaternion,
                     resolvedWound.GetMaterial(facing, out _), flags.FlagSet(PawnRenderFlags.DrawNow));
                 return;
             }
 
             if (pawn.BodySize >= 1.7)
             {
-                GenDraw.DrawMeshNowOrLater(MeshPool.plane20, loc, quat, resolvedWound.GetMaterial(facing, out _),
+                GenDraw.DrawMeshNowOrLater(MeshPool.plane20, loc, quaternion, resolvedWound.GetMaterial(facing, out _),
                     flags.FlagSet(PawnRenderFlags.DrawNow));
                 return;
             }
 
             if (pawn.BodySize >= 0.7)
             {
-                GenDraw.DrawMeshNowOrLater(MeshPool.plane14, loc, quat, resolvedWound.GetMaterial(facing, out _),
+                GenDraw.DrawMeshNowOrLater(MeshPool.plane14, loc, quaternion, resolvedWound.GetMaterial(facing, out _),
                     flags.FlagSet(PawnRenderFlags.DrawNow));
                 return;
             }
 
-            GenDraw.DrawMeshNowOrLater(MeshPool.plane10, loc, quat, resolvedWound.GetMaterial(facing, out _),
+            GenDraw.DrawMeshNowOrLater(MeshPool.plane10, loc, quaternion, resolvedWound.GetMaterial(facing, out _),
                 flags.FlagSet(PawnRenderFlags.DrawNow));
             return;
         }
 
         if (pawn.BodySize >= 2.7)
         {
-            GenDraw.DrawMeshNowOrLater(MeshMakerPlanes.NewPlaneMesh(2.5f), loc, quat,
+            GenDraw.DrawMeshNowOrLater(MeshMakerPlanes.NewPlaneMesh(2.5f), loc, quaternion,
                 MaterialPool.MatFrom("Things/Pawn/Wounds/Net_retexture_Genom-X", ShaderDatabase.WoundSkin, Color.white),
                 flags.FlagSet(PawnRenderFlags.DrawNow));
             return;
@@ -125,7 +125,7 @@ internal class Patch_DrawEquipmentAndApparelExtras
 
         if (pawn.BodySize >= 1.7)
         {
-            GenDraw.DrawMeshNowOrLater(MeshPool.plane20, loc, quat,
+            GenDraw.DrawMeshNowOrLater(MeshPool.plane20, loc, quaternion,
                 MaterialPool.MatFrom("Things/Pawn/Wounds/Net_retexture_Genom-X", ShaderDatabase.WoundSkin, Color.white),
                 flags.FlagSet(PawnRenderFlags.DrawNow));
             return;
@@ -133,13 +133,13 @@ internal class Patch_DrawEquipmentAndApparelExtras
 
         if (pawn.BodySize >= 0.7)
         {
-            GenDraw.DrawMeshNowOrLater(MeshPool.plane14, loc, quat,
+            GenDraw.DrawMeshNowOrLater(MeshPool.plane14, loc, quaternion,
                 MaterialPool.MatFrom("Things/Pawn/Wounds/Net_retexture_Genom-X", ShaderDatabase.WoundSkin, Color.white),
                 flags.FlagSet(PawnRenderFlags.DrawNow));
             return;
         }
 
-        GenDraw.DrawMeshNowOrLater(MeshPool.plane10, loc, quat,
+        GenDraw.DrawMeshNowOrLater(MeshPool.plane10, loc, quaternion,
             MaterialPool.MatFrom("Things/Pawn/Wounds/Net_retexture_Genom-X", ShaderDatabase.WoundSkin, Color.white),
             flags.FlagSet(PawnRenderFlags.DrawNow));
     }
