@@ -6,9 +6,9 @@ using Verse;
 namespace NetGun;
 
 [HarmonyPatch(typeof(PawnRenderUtility), nameof(PawnRenderUtility.DrawEquipmentAndApparelExtras))]
-internal class PawnRenderUtility_DrawEquipmentAndApparelExtras
+internal static class PawnRenderUtility_DrawEquipmentAndApparelExtras
 {
-    private static void Postfix(Pawn pawn, Vector3 drawPos, Rot4 facing, PawnRenderFlags flags)
+    public static void Postfix(Pawn pawn, Vector3 drawPos, Rot4 facing, PawnRenderFlags flags)
     {
         var hediffs = pawn.health.hediffSet.hediffs;
         Hediff hediff = null;

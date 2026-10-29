@@ -3,4 +3,23 @@
     <BuildType Name="Release" />
   </Configurations>
   <Project Path="NetGun/NetGun.csproj" />
+  <Folder Name="/.github/">
+    <File Path="../.github/copilot-instructions.md" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/Misc/FleshTypeDefs/">
+    <File Path="../1.7/Defs/Misc/FleshTypeDefs/FleshType.xml" />
+  </Folder>
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/DamageDefs/">
+    <File Path="../1.7/Defs/DamageDefs/Damages_RangedWeapon.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/HediffDefs/">
+    <File Path="../1.7/Defs/HediffDefs/Hediffs_Local_Injuries.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/ThingDefs_Misc/Weapons/">
+    <File Path="../1.7/Defs/ThingDefs_Misc/Weapons/RangedIndustrial.xml" />
+    <File Path="../1.7/Defs/ThingDefs_Misc/Weapons/Turret.xml" />
+  </Folder>
 </Solution>

@@ -1,6 +1,6 @@
 # [Net Gun (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2936908229)
 
-![Image](https://i.imgur.com/buuPQel.png)
+![Image](https://img.litet.net/logos/Info.png)
 
 Update of yiuaaas mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2126099924
@@ -8,9 +8,9 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2126099924
 - Added the Net Belt from [Net Belt 抓捕網腰帶](https://steamcommunity.com/sharedfiles/filedetails/?id=2583646612)
 - Added a net turret
 
-![Image](https://i.imgur.com/pufA0kM.png)
+![Image](https://img.litet.net/logos/Notice.png)
 	
-![Image](https://i.imgur.com/Z4GOv8H.png)
+![Image](https://img.litet.net/logos/OriginalDescription.png)
 
 A net gun is a non-lethal weapon designed to fire a net which entangles the target. It is good for catching escaping prisoners.
 
@@ -55,13 +55,13 @@ change log:
 2020/913: 1.2 updated
 2021/8/22: 1.3 updated
 	
-![Image](https://i.imgur.com/PwoNOj4.png)
+![Image](https://img.litet.net/logos/ReportingIssues.png)
 
 
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using [HugsLib](https://steamcommunity.com/workshop/filedetails/?id=818773962) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
+-  Always post your log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404)
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
@@ -69,4 +69,4 @@ change log:
 
  
 
-[![Image](https://img.shields.io/github/v/release/emipa606/NetGun?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2936908229) | tags:  mobility reducing
+[![Image](https://img.shields.io/github/v/release/emipa606/NetGun?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2936908229) | mobility reducing
